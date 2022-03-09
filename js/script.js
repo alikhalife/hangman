@@ -16,23 +16,30 @@ document.getElementById("lives").innerHTML = "You have " + lives + " lives";
 
 var input = document.getElementById("input") // creating input var for user input
 let seenLetters = [];
+let correctLetters = [];
 
 
 
 document.getElementById("btn").addEventListener("click", () => {
     var inputValue = input.value; // store/get value of input user and store it in var inputValue
-    
+
     if (seenLetters.includes(inputValue)) {
         console.log("Type another letter");
-        console.log(seenLetters);
+        console.log("this is the seenLetters of another letter", seenLetters);
     }
 
     else {
         seenLetters.push(inputValue);
-        console.log(seenLetters);
+        console.log("seenLetters of new letters", seenLetters);
 
-        if(word.includes(inputValue)) {
-            console.log(inputValue);
+        if (word.includes(inputValue)) {
+            let indicesOfLetter = indicesOfChar(word, inputValue) // get index of inputValue in word
+            indicesOfLetter.forEach(function(index) {
+                correctLetters[index] = inputValue 
+            })
+            
+            // set inputValue in correctLetters at index of inputValue in word
+            console.log("Ordered correctLetters", correctLetters);
         }
         else {
             console.log("sorry bro you lost a life") // counter should be here
@@ -40,15 +47,17 @@ document.getElementById("btn").addEventListener("click", () => {
 
     }
 
-   
-
-    
-
-
 
 })
 
 
+function indicesOfChar(word, char) {
+    let arrayOfIndices = [];
 
-
-
+    for (let i = 0; i < word.length; i++) {
+        if (word[i] == char) {
+            arrayOfIndices.push(i);
+        }
+    }
+    return arrayOfIndices;
+}
