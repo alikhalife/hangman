@@ -1,0 +1,18 @@
+.container {
+   
+    width:29%;
+    margin:0 auto;
+}
+body {
+    background-color: lightblue;
+}
+
+.letter {
+    background-color: rgb(127, 178, 255);
+}
+
+#letters {
+    display: flex;
+    justify-content: space-around;
+
+}

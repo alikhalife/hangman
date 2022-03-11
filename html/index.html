@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+
+    <link rel="stylesheet" href="../css/style.css">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,19 +12,30 @@
 </head>
 
 <body>
-    <div>
+    <div class="container">
         <h1>HANGMAN</h1>
         <h2>You know the rules - let's play</h2>
         <h3>You can pick your alphabet below to guess the word.</h3>
-        <h4>Don' worry if you get stuck, <button>hint</button> is always here to help</h4>
+        <!-- <h4>Don't worry if you get stuck, <button>hint</button> is always here to help</h4> -->
+    </div>
+    <div>
+        <div id="letters"></div>
+        <input id="input" type="text">
+        <button id="btn" name="button">Enter</button>
+        <div id="word"></div>
+        <div id="lives"></div>
+        <div id="answers"></div>
+    
     </div>
 
-    <input id="input" type="text">
-    <button id="btn">Enter</button>
-    <div id="letters"></div>
-    <div id="lives">You stil have x lives</div>
-    <div id="answers"></div>
+    <div class="notif hidden">
+        <h2> Game Over! </h2>
+        <h3 class="notif-content"> You won! </h3>
+        <h4> Correct word <span class="notif-span"></span> </h4>
+        <button class="notif-btn"> Play again </button>
+    </div>
 
+   
     <script src="../js/script.js"></script>
 </body>
 
