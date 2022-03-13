@@ -1,21 +1,70 @@
 .container {
   width: 29%;
   margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+  margin: auto;
+  width: 16%;
+  padding: 10px;
+}
+
+#word {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+  width: 47%;
+}
+
+#lives {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+  width: 47%;
+  padding: 10px;
 }
 
 body {
-  background-color: lightblue;
+  -webkit-transition: .2sbackground;
+  transition: .2sbackground;
+  background: #ff0035;
+  background-image: -webkit-gradient(linear, left top, right top, from(red), to(yellow));
+  background-image: linear-gradient(to right, red, yellow);
+  color: white;
 }
 
 .letter {
-  background-color: #7fb2ff;
+  background-color: #73AD21;
+  color: white;
 }
 
 #letters {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  margin: auto;
+  width: 47%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+
+button {
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  font-size: 1.4em;
+  cursor: pointer;
+}
+
+button:disabled,
+button[disabled] {
+  background-color: #d83030;
+  color: #dfe220;
+}
+
+canvas {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
