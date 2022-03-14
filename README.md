@@ -2,4 +2,4 @@
 
 Creating the Hangman game
 
-<https://alikhalife.github.io/hangman/>
+<https://alikhalife.github.io/hangman/index.html>
