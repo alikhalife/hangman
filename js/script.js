@@ -132,7 +132,6 @@ divLetters.addEventListener("click", (event) => { // c'est ça qu'il faut change
         console.log(seenLetters)
 
     }
-
     else {
         seenLetters.push(inputValue);//inputValue);
         event.target.disabled = true;
@@ -159,7 +158,6 @@ divLetters.addEventListener("click", (event) => { // c'est ça qu'il faut change
             if (lives == 0) {
                 alert("You lost! You can try again." + "The word was: " + randomword);
                 resetGame();
-
             }
         }
     }
