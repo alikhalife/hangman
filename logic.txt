@@ -1,0 +1,6 @@
+guess the word using single letter input
+set number of lives 10
+get hint (optional)
+reset button - to reset the word, lives and score
+pop up at last to show win or lose
+each wrong guess will delete the letter of alphabet from list and decrease lives
